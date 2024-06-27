@@ -1,0 +1,5 @@
+# filter AI files
+AI/
+
+# filter the all files that are not ready for github
+BolckChain/
