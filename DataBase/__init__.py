@@ -10,6 +10,6 @@ from .log import return_json_data_as_list,logout,true_false_value,test_true_fals
 from .signup import SignUp
 
 #Defind instance var
-path_users_data = r"App\DataBase\users.json"
-path_system_data = r"App\DataBase\system.json"
-path_log_data = r"App\DataBase\log.json"
+path_users_data = r"DataBase\users.json"
+path_system_data = r"DataBase\system.json"
+path_log_data = r"DataBase\log.json"
