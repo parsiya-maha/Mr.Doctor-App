@@ -25,5 +25,50 @@
         "time": 12.457,
         "path": "D:/Parsia Works/python/Project/AI/LungMask/datasets/Testing/cxrimage_16949.png",
         "point": 1
+    },
+    {
+        "log_id": 7,
+        "id": "6f8f57715090da2632453988d9a1501b0cc175b9c0f1b6a831c399e2697726612510c39011c5be704182423e3a695e918277e0910d750195b448797616e091ad865c0c0b4ab0e063e5caa3387c1a8741c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236dc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122c",
+        "option": "ToRecognizeAndPredict",
+        "result": "BrainTumors : glioma",
+        "time": 1.455,
+        "path": "D:/Parsia Works/python/Project/AI/BrainTumors/datasets/Testing/glioma/Te-gl_0017.jpg",
+        "point": 1
+    },
+    {
+        "log_id": 8,
+        "id": "6f8f57715090da2632453988d9a1501b0cc175b9c0f1b6a831c399e2697726612510c39011c5be704182423e3a695e918277e0910d750195b448797616e091ad865c0c0b4ab0e063e5caa3387c1a8741c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236dc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122c",
+        "option": "LungCancer",
+        "result": "Colon_Adenocarcinoma",
+        "time": 0.452,
+        "path": "D:/Parsia Works/python/Project/AI/LungMask/datasets/Testing/cxrimage_16945.png",
+        "point": 0
+    },
+    {
+        "log_id": 9,
+        "id": "6f8f57715090da2632453988d9a1501b0cc175b9c0f1b6a831c399e2697726612510c39011c5be704182423e3a695e918277e0910d750195b448797616e091ad865c0c0b4ab0e063e5caa3387c1a8741c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236dc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122c",
+        "option": "LungMask",
+        "result": "No Output",
+        "time": 7.409,
+        "path": "D:/Parsia Works/python/Project/AI/LungMask/datasets/Testing/cxrimage_16945.png",
+        "point": 1
+    },
+    {
+        "log_id": 10,
+        "id": "6f8f57715090da2632453988d9a1501b0cc175b9c0f1b6a831c399e2697726612510c39011c5be704182423e3a695e918277e0910d750195b448797616e091ad865c0c0b4ab0e063e5caa3387c1a8741c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236dc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122c",
+        "option": "LungMask",
+        "result": "No Output",
+        "time": 7.12,
+        "path": "D:/Parsia Works/python/Project/AI/LungMask/datasets/Testing/cxrimage_16945.png",
+        "point": 1
+    },
+    {
+        "log_id": 11,
+        "id": "6f8f57715090da2632453988d9a1501b0cc175b9c0f1b6a831c399e2697726612510c39011c5be704182423e3a695e918277e0910d750195b448797616e091ad865c0c0b4ab0e063e5caa3387c1a8741c9f0f895fb98ab9159f51fd0297e236dc9f0f895fb98ab9159f51fd0297e236dc4ca4238a0b923820dcc509a6f75849bc81e728d9d4c2f636f067f89cc14862ceccbc87e4b5ce2fe28308fd9f2a7baf3a87ff679a2f3e71d9181a67b7542122c",
+        "option": "LungMask",
+        "result": "No Output",
+        "time": 5.851,
+        "path": "D:/Parsia Works/python/Project/AI/LungMask/datasets/Testing/cxrimage_16945.png",
+        "point": 1
     }
 ]
