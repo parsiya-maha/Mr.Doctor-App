@@ -23,14 +23,14 @@ def log_out_func(app):
 
         app.destroy() # Destroy app
         app.quit() # Quit app
-        subprocess.call([sys.executable, 'App\\main.py'])
+        subprocess.call([sys.executable, 'main.py'])
 
 def log_app_lambda(app:customtkinter.CTk):
     if not is_login():
         ...
     else:
         app.iconify()
-        # subprocess.call([sys.executable, 'App\\log_app.py'])
+        # subprocess.call([sys.executable, 'log_app.py'])
         # # return_log().mainloop()
         # app.deiconify()
         return_log_app(app).mainloop()

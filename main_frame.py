@@ -9,7 +9,7 @@ from BtnInfo import btn_info
 
 # LABEL[IMAGE] -> brain image (that is for design)
 def brain_image_label(master)->customtkinter.CTkLabel:
-    path = os.path.join(os.getcwd(),"App\\images\\home.png")
+    path = os.path.join(os.getcwd(),"images\\home.png")
 
     my_image = customtkinter.CTkImage(light_image=Image.open(path),
                                   dark_image=Image.open(path),

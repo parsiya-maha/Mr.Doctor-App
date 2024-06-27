@@ -32,7 +32,8 @@ def return_loading_app(master:customtkinter.CTk):
     app.geometry("650x415+100+100")
     app.overrideredirect(True)
 
-    path = r"App\\images\\loading.png"
+
+    path = r"images\loading.png"
 
     image =  customtkinter.CTkImage(light_image=Image.open(path),
                                     dark_image=Image.open(path),
@@ -41,8 +42,8 @@ def return_loading_app(master:customtkinter.CTk):
     image_lbl = customtkinter.CTkLabel(app,text="",image=image)
     image_lbl.place(x=309,y=65)
 
-    path1 = r"App\images\loading.png"
-    path2 = r"App\images\loading2.png"
+    path1 = r"images\loading.png"
+    path2 = r"images\loading2.png"
 
     # Function to animate the image
     def image_animation(image_pos):
@@ -106,14 +107,6 @@ def return_loading_app(master:customtkinter.CTk):
     prog.place(x=43,y=360)
     prog.start()
 
-
-    # path2 = r"App\\images\\copy right.png"
-
-    # image2 =  customtkinter.CTkImage(light_image=Image.open(path2),
-    #                                 dark_image=Image.open(path2),
-    #                                 size=(18*15,18))
-
-    # customtkinter.CTkLabel(app,text="",image=image2).place(x=35,y=380)
 
     # Copyright text
     customtkinter.CTkLabel(app,text="© 2024 Mr.Doctor. All rights reserved.",font=("calibri",15,"italic")).place(x=42,y=375)

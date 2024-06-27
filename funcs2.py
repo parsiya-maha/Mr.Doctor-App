@@ -19,11 +19,6 @@ from DataBase import find_last_id_json,add_log_json,how_is_login_json
 from DataBase import change_one_value_in_json_data,find_index_from_id_json,delete_log_from_json_data,give_up_tabel_json_data_in_log
 
 
-# Defined base var
-log_csv_path = "App\\log.csv"
-
-
-
 # Function to check login data [username , password]
 def check_login_data(username,password):
     return check_login_data_in_json(username,password)
@@ -49,7 +44,7 @@ def go_to_login_func(app:customtkinter.CTk):
 
         # app.deiconify()
         app.destroy()
-        subprocess.call([sys.executable, 'App\\main.py'])
+        subprocess.call([sys.executable, 'main.py'])
 
 # Run signup app after user click signup btn
 def go_to_signup_func(app:customtkinter.CTk):
@@ -61,7 +56,7 @@ def go_to_signup_func(app:customtkinter.CTk):
 
         # app.deiconify()
         app.destroy()
-        subprocess.call([sys.executable, 'App\\main.py'])        
+        subprocess.call([sys.executable, 'main.py'])        
         
 # Defind base path var
 PATH = None

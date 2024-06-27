@@ -7,7 +7,7 @@ from BtnInfo import btn_info
 # Default image before upload image
 def upload_image_sub_frame(master)->customtkinter.CTkLabel:
 
-    path = os.path.join(os.getcwd(),"App\\images\\upload1.png")
+    path = os.path.join(os.getcwd(),"images\\upload1.png")
 
     img = customtkinter.CTkImage(light_image=Image.open(path),
                                 dark_image=Image.open(path),

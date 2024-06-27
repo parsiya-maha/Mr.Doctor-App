@@ -10,9 +10,9 @@ from .make_hash import make_hash_from_str,make_id_for_user
 
 
 #Defind instance var
-path_users_data = r"App\DataBase\users.json"
-path_system_data = r"App\DataBase\system.json"
-path_log_data = r"App\DataBase\log.json"
+path_users_data = r"DataBase\users.json"
+path_system_data = r"DataBase\system.json"
+path_log_data = r"DataBase\log.json"
 
 
 # Class for sign up methods

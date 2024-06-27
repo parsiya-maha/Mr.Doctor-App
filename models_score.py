@@ -23,6 +23,10 @@ def return_app():
     app.resizable(0,0)
     app.title("Mr.Doctor - Models score")
 
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+
+
     # Defind one TabView
     tab_frame = customtkinter.CTkTabview(app)
 

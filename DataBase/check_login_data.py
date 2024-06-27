@@ -9,9 +9,9 @@ import random
 from CTkMessagebox import CTkMessagebox
 
 #Defind instance var
-path_users_data = r"App\DataBase\users.json"
-path_system_data = r"App\DataBase\system.json"
-path_log_data = r"App\DataBase\log.json"
+path_users_data = r"DataBase\users.json"
+path_system_data = r"DataBase\system.json"
+path_log_data = r"DataBase\log.json"
 
 
 RANDOM_TEXT = "qwertyuiopasdfghjklzxcvbnm0123456789QWERTYUIOPLKJHGFDSAZXCVBNM@#$%&!+-"

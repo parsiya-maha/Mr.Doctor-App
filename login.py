@@ -36,8 +36,13 @@ def return_login_page(master)->customtkinter.CTk:
     app.title("Mr.Doctor - Login")
 
 
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+
+
+
     # Load base image for design
-    path = os.path.join(os.getcwd(),"App\\images\\login.png")
+    path = os.path.join(os.getcwd(),"images\\login.png")
 
     login_image = customtkinter.CTkImage(light_image=Image.open(path),
                                     dark_image=Image.open(path),
@@ -149,7 +154,7 @@ def return_login_page(master)->customtkinter.CTk:
 
             # Show message box for `error in connecting to the internet`
             CTkMessagebox(title="Network Error !",message="There is a problem connecting to the Internet.."
-                ,icon=os.path.join(os.getcwd(),"App\\images\\no-net-l.png"))
+                ,icon=os.path.join(os.getcwd(),"images\\no-net-l.png"))
 
         # Else all things was OK
         else:
@@ -162,7 +167,7 @@ def return_login_page(master)->customtkinter.CTk:
             # Whene have a problem in connect to the internet 
             except:
                 CTkMessagebox(title="Network Error !",message="There is a problem connecting to the Internet."
-                ,icon=os.path.join(os.getcwd(),"App\\images\\no-net-l.png"))
+                ,icon=os.path.join(os.getcwd(),"images\\no-net-l.png"))
 
 
     _bg = app._apply_appearance_mode(customtkinter.ThemeManager.theme["CTk"]["fg_color"])

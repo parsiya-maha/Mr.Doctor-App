@@ -151,13 +151,13 @@ def go_to_model_score(master:customtkinter.CTkFrame)->customtkinter.CTkButton:
     return btn
 
 
-# Function to run [App\log_app.py] python file
+# Function to run [log_app.py] python file
 def log_app_lambda(app):
     if not is_login():
         ...
     else:
         app.iconify()
-        # subprocess.call([sys.executable, 'App\\log_app.py'])
+        # subprocess.call([sys.executable, 'log_app.py'])
         # # return_log().mainloop()
         # app.deiconify()
         return_log_app(app).mainloop()
@@ -184,7 +184,7 @@ def log_out_func(app):
 
         app.destroy() # Destroy app
         app.quit() # Quit app
-        subprocess.call([sys.executable, 'App\\main.py'])
+        subprocess.call([sys.executable, 'main.py'])
 
 
 
@@ -211,7 +211,7 @@ def log_plot_app_lambda(app:customtkinter.CTk):
     else:
         app.iconify()
         # return_tfp_page().mainloop()
-        # subprocess.call([sys.executable, 'App\\true_to_false_predict.py'])
+        # subprocess.call([sys.executable, 'true_to_false_predict.py'])
         # app.deiconify()
         return_tfp_page(app).mainloop()
 
@@ -235,14 +235,14 @@ def log_plot_app(master:customtkinter.CTkFrame,app)->customtkinter.CTkButton:
 def show_user_info(app:customtkinter.CTk):
         
         app.iconify()
-        # subprocess.call([sys.executable, 'App\\user_info_app.py'])
+        # subprocess.call([sys.executable, 'user_info_app.py'])
         # app.deiconify()
         return_user_info_page(app).mainloop()
 
 
 # Button -> return custom btn
 def user_info_btn(master:customtkinter.CTkFrame,app)->customtkinter.CTkButton:
-    path = "App\\images\\usericon2.png"
+    path = "images\\usericon2.png"
 
     my_image = customtkinter.CTkImage(light_image=Image.open(path),
                                   dark_image=Image.open(path),

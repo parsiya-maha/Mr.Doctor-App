@@ -20,6 +20,10 @@ def return_help_app(master:customtkinter.CTk) -> customtkinter.CTkToplevel :
     app.minsize(550,600)
     app.title("Mr.Doctor - Help")
 
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+
+
 
     frame = customtkinter.CTkScrollableFrame(app,corner_radius=0,fg_color="#272323")
     # frame = CTkXYFrame.CTkXYFrame(app,corner_radius=0,fg_color="#272323")
@@ -27,7 +31,7 @@ def return_help_app(master:customtkinter.CTk) -> customtkinter.CTkToplevel :
 
 
 
-    PATH = r"App\images\\help.png"
+    PATH = r"images\\help.png"
     WIDTH_LIMIT = 500
 
     image_size = cv2.imread(PATH).shape

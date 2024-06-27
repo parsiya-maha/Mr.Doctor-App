@@ -23,8 +23,7 @@ from DataBase import change_one_value_in_json_data,find_index_from_id_json,delet
 
 from lung_plot import return_lung_plot
 
-# Defined base var
-log_csv_path = "App\\log.csv"
+
 
 
 
@@ -53,7 +52,7 @@ def go_to_login_func(app:customtkinter.CTk):
 
         # app.deiconify()
         app.destroy()
-        subprocess.call([sys.executable, 'App\\main.py'])
+        subprocess.call([sys.executable, 'main.py'])
 
 
 # Run signup app after user click signup btn
@@ -66,7 +65,7 @@ def go_to_signup_func(app:customtkinter.CTk):
 
         # app.deiconify()
         app.destroy()
-        subprocess.call([sys.executable, 'App\\main.py'])
+        subprocess.call([sys.executable, 'main.py'])
 
         
         

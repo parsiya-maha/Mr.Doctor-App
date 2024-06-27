@@ -22,8 +22,12 @@ def return_signup_page(master)->customtkinter.CTk:
     app.title("Mr.Doctor - Sign up")
     app.resizable(0,0)
 
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+
+
     # Load base image for design
-    path = os.path.join(os.getcwd(),"App\\images\\signup1.png")
+    path = os.path.join(os.getcwd(),"images\\signup1.png")
 
     signup_image = customtkinter.CTkImage(light_image=Image.open(path),
                                     dark_image=Image.open(path),

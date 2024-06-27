@@ -72,7 +72,7 @@ def make_one_frame(master,log:list,main_tabel):
     # UNDEFIND -> the image path not defind (not correct)
     else:
         # Base path for UNDEFIND images
-        path = os.path.join(os.getcwd(),".\\App\\images\\no_image1.png")
+        path = os.path.join(os.getcwd(),"images\\no_image1.png")
 
     # Defind CTkImage widget
     my_image = customtkinter.CTkImage(light_image=Image.open(path),
@@ -85,7 +85,7 @@ def make_one_frame(master,log:list,main_tabel):
 
     
     # Show `BIN` btn image on widget
-    bin_path = os.path.join(os.getcwd(),".\\App\\images\\bin.png")
+    bin_path = os.path.join(os.getcwd(),"images\\bin.png")
 
     bin_image = customtkinter.CTkImage(light_image=Image.open(bin_path),
                                 dark_image=Image.open(bin_path),
@@ -101,7 +101,7 @@ def make_one_frame(master,log:list,main_tabel):
 
 
     # Show `COPY` btn image on widget
-    copy_path = os.path.join(os.getcwd(),".\\App\\images\\copy.png")
+    copy_path = os.path.join(os.getcwd(),"images\\copy.png")
 
     copy_image = customtkinter.CTkImage(light_image=Image.open(copy_path),
                                 dark_image=Image.open(copy_path),
@@ -208,6 +208,10 @@ def return_log_app(master):
     app.geometry("1200x700")
     app.resizable(0,0)
     app.title("Mr.Doctor - Logs")
+
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+    
 
     # Defind instance var
     data_logs = return_data_as_list()

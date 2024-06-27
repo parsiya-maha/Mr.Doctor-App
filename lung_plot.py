@@ -44,6 +44,11 @@ def return_lung_plot(master:customtkinter.CTk,predicts:list) -> customtkinter.CT
     app.resizable(0,0)
     app.title("Mr.Doctor - Lung Mask")
 
+
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+    
+
     _bg = app._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"])
 
 
@@ -113,7 +118,7 @@ def return_lung_plot(master:customtkinter.CTk,predicts:list) -> customtkinter.CT
     customtkinter.CTkLabel(frame3,text="",image=image3).pack(fill="both",expand=1)
 
     # Load base image for design
-    path = os.path.join(os.getcwd(),"App\\images\\save as.png")
+    path = os.path.join(os.getcwd(),"images\\save as.png")
 
     image = customtkinter.CTkImage(light_image=Image.open(path),
                                     dark_image=Image.open(path),

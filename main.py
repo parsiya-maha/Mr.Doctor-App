@@ -10,8 +10,8 @@ app.geometry("1100x700+100+50")
 app.resizable(0,0)
 app.title("  ")
 
-# icon_path = "App\\images\\project icon.ico"
-# app.iconbitmap(icon_path)
+icon_path = "images\\project icon.ico"
+app.iconbitmap(icon_path)
 
 
 LOADING = True

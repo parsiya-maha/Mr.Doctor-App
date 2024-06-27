@@ -51,6 +51,10 @@ def return_user_info_page(master)->customtkinter.CTk:
     app.title("Mr.Doctor - User account")
     app.resizable(0,0)
 
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+
+
     # Defind one TabView
     tab_frame = customtkinter.CTkTabview(app)
 
@@ -71,7 +75,7 @@ def return_user_info_page(master)->customtkinter.CTk:
     img_frame1 = customtkinter.CTkFrame(frame1,height=300,width=300,corner_radius=150)
     img_frame1.grid(row=0,column=0,pady=20,padx=(10,20))
 
-    path1 = "App\\images\\man.png" if give_gender_islogin() == "male" else "App\\images\\woman.png"
+    path1 = "images\\man.png" if give_gender_islogin() == "male" else "images\\woman.png"
 
     image_obj1 = customtkinter.CTkImage(light_image=Image.open(path1),
                                   dark_image=Image.open(path1),
@@ -132,7 +136,7 @@ def return_user_info_page(master)->customtkinter.CTk:
     img_frame2.grid(row=0,column=1,padx=(0,10),pady=10,sticky="e")
 
 
-    path21 = "App\\images\\brain.png"
+    path21 = "images\\brain.png"
     image_obj21 = customtkinter.CTkImage(light_image=Image.open(path21),
                                   dark_image=Image.open(path21),
                                   size=(50, 50))
@@ -140,7 +144,7 @@ def return_user_info_page(master)->customtkinter.CTk:
     customtkinter.CTkLabel(img_frame2,text="",image=image_obj21).pack(pady=(30,20),anchor="n")
 
 
-    path22 = "App\\images\\lung.png"
+    path22 = "images\\lung.png"
     image_obj22 = customtkinter.CTkImage(light_image=Image.open(path22),
                                   dark_image=Image.open(path22),
                                   size=(60, 60))
@@ -148,7 +152,7 @@ def return_user_info_page(master)->customtkinter.CTk:
     customtkinter.CTkLabel(img_frame2,text="",image=image_obj22).pack(pady=(30,15),anchor="n")
 
 
-    path23 = "App\\images\\kidney.png"
+    path23 = "images\\kidney.png"
     image_obj23 = customtkinter.CTkImage(light_image=Image.open(path23),
                                   dark_image=Image.open(path23),
                                   size=(60, 60))
@@ -168,7 +172,7 @@ def return_user_info_page(master)->customtkinter.CTk:
 
     bg_color3_f = text_frame3._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"])
 
-    path31 = "App\\images\\home.png"
+    path31 = "images\\home.png"
     image_obj31 = customtkinter.CTkImage(light_image=Image.open(path31),
                                   dark_image=Image.open(path31),
                                   size=(300, 300))
@@ -188,22 +192,22 @@ def return_user_info_page(master)->customtkinter.CTk:
     bg_color3 = more_btn_frame._apply_appearance_mode(customtkinter.ThemeManager.theme["CTkFrame"]["fg_color"])
 
 
-    path32 = "App\\images\\github.png"
+    path32 = "images\\github.png"
     image_obj32 = customtkinter.CTkImage(light_image=Image.open(path32),
                                   dark_image=Image.open(path32),
                                   size=(40, 40))
     
-    path33 = "App\\images\\gmail.png"
+    path33 = "images\\gmail.png"
     image_obj33 = customtkinter.CTkImage(light_image=Image.open(path33),
                                   dark_image=Image.open(path33),
                                   size=(40, 40))
 
-    path34 = "App\\images\\linkedin.png"
+    path34 = "images\\linkedin.png"
     image_obj34 = customtkinter.CTkImage(light_image=Image.open(path34),
                                   dark_image=Image.open(path34),
                                   size=(40, 40))
     
-    path35 = "App\\images\\facebook.png"
+    path35 = "images\\facebook.png"
     image_obj35 = customtkinter.CTkImage(light_image=Image.open(path35),
                                   dark_image=Image.open(path35),
                                   size=(40, 40))
@@ -239,8 +243,8 @@ def return_user_info_page(master)->customtkinter.CTk:
     text_frame3.pack(fill="both",expand=1,padx=10,pady=10,side="left")
 
 
-    path_l = "App\\images\\password-l.png"
-    path_d = "App\\images\\password-d.png"
+    path_l = "images\\password-l.png"
+    path_d = "images\\password-d.png"
 
     image_obj31 = customtkinter.CTkImage(light_image=Image.open(path_l),
                                   dark_image=Image.open(path_d),
@@ -329,7 +333,7 @@ def return_user_info_page(master)->customtkinter.CTk:
     inputtext.pack(fill="x",padx=10,pady=10)
 
 
-    path = os.path.join(os.getcwd(),"App\\images\\send.png")
+    path = os.path.join(os.getcwd(),"images\\send.png")
 
     send_image = customtkinter.CTkImage(light_image=Image.open(path),
                                     dark_image=Image.open(path),
@@ -345,15 +349,15 @@ def return_user_info_page(master)->customtkinter.CTk:
             CTkMessagebox(title="Mr.Doctor - Contact us",message="Thank you for your partnership.",icon="check")
         except:
             CTkMessagebox(title="Network Error !",message="There is a problem connecting to the Internet."
-                ,icon=os.path.join(os.getcwd(),"App\\images\\no-net-l.png"))
+                ,icon=os.path.join(os.getcwd(),"images\\no-net-l.png"))
 
 
 
     send_btn = customtkinter.CTkButton(text_frame3,text="Send",font=("calibri",20,"bold"),image=send_image,command=send_func)
     send_btn.pack(fill="both",expand=1,padx=10,pady=(0,10))
 
-    path_l = os.path.join(os.getcwd(),"App\\images\\contact-l.png")
-    path_d = os.path.join(os.getcwd(),"App\\images\\contact-d.png")
+    path_l = os.path.join(os.getcwd(),"images\\contact-l.png")
+    path_d = os.path.join(os.getcwd(),"images\\contact-d.png")
 
     contact_image = customtkinter.CTkImage(light_image=Image.open(path_l),
                                     dark_image=Image.open(path_d),

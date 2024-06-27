@@ -68,10 +68,15 @@ def return_tfp_page(master)->customtkinter.CTkToplevel:
     customtkinter.set_appearance_mode("System")  
     customtkinter.set_default_color_theme("blue")  
 
+
     # Defind project-part app (type : top level)
     app = customtkinter.CTkToplevel(master)
     # app.geometry("500x450")
     app.title("Mr.Doctor - true/false plot")
+
+    icon_path = "images\\project icon.ico"
+    app.after(250,lambda:app.iconbitmap(icon_path))
+
 
     customtkinter.CTkLabel(app,text="True/False plot (pie)",font=("calibri",40,"bold")).pack(pady=15)
 
